@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Great+Vibes&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); */
+
+.custom {
+  /* font-family: "Marck Script"; */
+  /* font-family: "Great Vibes", cursive; */
+  font-family: "Bad Script", cursive;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@keyframes fade-up {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+
+@keyframes birds {
+  0% {
+    transform: translateY(50px) translateX(-50px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-300px) translateX(100px);
+    opacity: 0;
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 3s ease-in-out forwards;
+}
+
+.animate-birds {
+  animation: birds 5s ease-in-out infinite;
+}
+
+
+.custom-wrap-item {
+  flex: 200px
+}
+
+body,main {
+  font-family: "Montserrat", sans-serif;
+  background-color: #1B3A57;
+}
