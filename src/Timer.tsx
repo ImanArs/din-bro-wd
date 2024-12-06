@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export const Timer = () => {
   // Стартовая дата - 21 декабря 2024 года
@@ -10,7 +10,7 @@ export const Timer = () => {
   // Функция для вычисления оставшегося времени
   const calculateTimeLeft = () => {
     const now = new Date();
-    const difference = targetDate - now;
+    const difference: number = targetDate.getTime() - now.getTime();  // Explicitly cast to number
     
     if (difference > 0) {
       const days = Math.floor(difference / (1000 * 60 * 60 * 24));
@@ -29,6 +29,7 @@ export const Timer = () => {
 
     // Очищаем интервал при размонтировании компонента
     return () => clearInterval(interval);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
