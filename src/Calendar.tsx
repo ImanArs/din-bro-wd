@@ -1,5 +1,3 @@
-import React from "react";
-
 export const Calendar = () => {
   const days = Array.from({ length: 31 }, (_, i) => i + 1); // Дни месяца
   const weekDays = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
