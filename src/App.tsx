@@ -1,9 +1,9 @@
-import { Description } from "./Description";
-import First from "./First";
-import { Form } from "./Form";
-import { LoaderScreen } from "./LoaderScreen";
+import { Calendar } from "./Calendar";
 import { Location } from "./Location";
+import { Photo } from "./Photo";
+import { Rsvp } from "./rsvp";
 import { Timer } from "./Timer";
+import { WeddingDay } from "./WeddingDay";
 
 const photos = [
   'https://i.pinimg.com/236x/52/b2/a0/52b2a06a53fc8e98c3573d70be2b5a86.jpg',
@@ -18,75 +18,13 @@ const photos = [
 
 function App() {
   return (
-    <main>
-    <div className="min-h-screen max-w-[420px] p-5 w-full m-auto text-white relative">
-      {/* Floating Icons */}
-      {/* <div>
-        {[...Array(12)].map((_, index) => (
-          <img
-            key={index}
-            src="https://cdn-icons-png.flaticon.com/512/2920/2920589.png"
-            alt="icon"
-            className={`absolute w-6 h-6 opacity-60 animate-float ${
-              index % 2 === 0 ? "top-[10%]" : "top-[70%]"
-            } ${index % 3 === 0 ? "left-[20%]" : "left-[80%]"}`}
-          />
-        ))}
-      </div> */}
-
-      <LoaderScreen />
-      <First />
-
-      {/* Description */}
-      <Description />
-
-      {/* Timer */}
+    <main className="max-w-[525px] w-full overflow-hidden m-auto flex flex-col gap-6">
+      <Photo />
       <Timer />
-
-      {/* Registration Form */}
-      <Form />
-
-      {/* Photos */}
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <h2 className="text-3xl font-bold mb-4">Wedding Memories</h2>
-        <div className="flex flex-wrap gap-4">
-          {photos.map((img, index) => (
-            <div
-              key={index} // Используем index вместо img
-              className={`overflow-hidden rounded-lg ${
-                index % 3 === 0
-                  ? "flex-[400px] h-[400px]" // Специальный стиль для элемента с индексом 2
-                  : "flex-[150px] h-[200px]"
-              }`}
-            >
-              <img
-                src={img}
-                className="w-full h-full object-cover" // Исправлено для адаптивности
-                alt={`Image ${index + 1}`} // Уникальный alt
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Invitation Text */}
-      <section className="max-w-4xl mx-auto px-4 py-8 text-center relative">
-        <h2 className="text-3xl font-bold mb-4">Invitation</h2>
-        <p className="text-lg">
-          Если Вы получили эту ссылку, значит мы от чистого сердца и с большой любовью приглашаем Вас на самое важное событие для нашей семьи - День свадьбы, которое пройдет в ресторане «Ата» 21 декабря 2024 года.
-        </p>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/2375/2375694.png"
-          alt="Ring"
-          className="absolute bottom-[20%] left-[5%] w-6 h-6 opacity-70"
-        />
-      </section>
-
-      {/* Location */}
+      <WeddingDay />
+      <Rsvp />
       <Location />
-
-      
-    </div>
+      <Calendar />
     </main>
   );
 }
