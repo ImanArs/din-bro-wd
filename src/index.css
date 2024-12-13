@@ -8,6 +8,10 @@
   src: url(./fonts/Bella Script.otf);
 }
 @font-face {
+  font-family: dastan;
+  src: url(./fonts/Gamaleon.ttf);
+}
+@font-face {
   font-family: 'Cursive-word';
   src: url(./fonts/Bella Script CYR.otf);
 }
@@ -18,6 +22,14 @@
 @font-face {
   font-family: 'Felidae';
   src: url(./fonts/Felidae.ttf);
+}
+@font-face {
+  font-family: 'SnellBlack';
+  src: url(./fonts/snellroundhand_black.otf);
+}
+@font-face {
+  font-family: 'SnellBold';
+  src: url(./fonts/snellroundhand_bold.otf);
 }
 
 .cursive-font {
@@ -38,4 +50,10 @@
 }
 .felidae {
   font-family: "Felidae";
+}
+.gamelon {
+  font-family: dastan;
+}
+.snellBold {
+  font-family: 'SnellBold';
 }

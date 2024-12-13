@@ -8,7 +8,7 @@ export const Timer = () => {
     seconds: 0,
   });
 
-  const targetDate = new Date("2024-12-21T00:00:00");
+  const targetDate = new Date("2025-01-09T00:00:00");
 
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -35,13 +35,13 @@ export const Timer = () => {
 
   return (
     <section className="w-full text-center flex flex-col gap-5 playfair">
-      <h2 className="text-3xl font-bold ">До свадьбы</h2>
+      {/* <h2 className="text-3xl font-bold ">До свадьбы</h2> */}
       <div className="grid grid-cols-4 gap-6">
         {Object.entries(timeLeft).map(([label, value]) => (
           <div key={label} className="flex flex-col items-center">
             <span
-              className="text-4xl p-5 bg-black text-white rounded-[14px] flex items-center justify-center"
-              style={{ width: "80px", height: "80px" }}
+              className="text-2xl p-5 bg-black text-white rounded-[14px] flex items-center justify-center"
+              style={{ width: "60px", height: "60px" }}
             >
               {value}
             </span>
