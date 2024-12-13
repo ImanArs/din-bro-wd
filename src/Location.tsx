@@ -28,7 +28,7 @@ export const Location = () => {
 
           <div className="flex flex-col gap-5 mb-[100px]">
             <p className=" snellBold text-[24px] tracking-[4px] leading-5 mt-[140px]">
-              Мы выбрали это место для создания незабываемой и романтического настроения
+              Мы выбрали это место для создания Незабываемого и романтического настроения
             </p>
             <div className="h-[1px] w-[150px] m-auto bg-white"></div>
             <div>
