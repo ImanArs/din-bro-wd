@@ -6,10 +6,10 @@ export const Photo = () => {
       </div>
       <img className='w-full' src="https://i.pinimg.com/736x/8e/5e/4e/8e5e4e97d7f960f8cb048e863eac9c82.jpg" alt="" />
       <div className='absolute z-10 bottom-[20px] left-[50%] flex flex-col gap-5 w-[80%] translate-x-[-50%]'>
-        <h2 className='flex flex-col gap-2.5 text-4xl text-center playfair'>
-          Dastan 
-          <span>&</span>
-          Adelina
+        <h2 className='flex flex-col gap-2.5 text-[60px] text-center gamelon font-[600] leading-2'>
+          <span className="-ml-[120px]">Dastan</span>
+          <span className="text-[66px] leading-[0px]">&</span>
+          <span className="ml-[120px]">Adelina</span>
         </h2>
         {/* <p className="playfair">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem, obcaecati nam incidunt sapiente eveniet harum consectetur aliquam tenetur consequuntur!</p> */}
       </div>

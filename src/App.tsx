@@ -7,7 +7,7 @@ import { WeddingDay } from "./WeddingDay";
 
 function App() {
   return (
-    <main className="max-w-[525px] w-full overflow-hidden m-auto flex flex-col gap-6 mb-[80px]">
+    <main className="max-w-[525px] w-full overflow-hidden m-auto flex flex-col gap-6">
       <Photo />
       <Timer />
       <WeddingDay />

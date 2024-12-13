@@ -89,14 +89,14 @@ export const Rsvp = () => {
           <div>
             <button
               type="submit"
-              className="uppercase bg-transparent border text-[#c6c6c6] py-3 px-6 rounded-md font-medium transition-all max-w-[300px] w-full"
+              className="uppercase bg-transparent border text-[#c6c6c6] py-3 px-6 rounded-md font-medium transition-all max-w-[200px] w-full"
               >
               отправить
             </button>
           </div>
         </form>
       )}
-      <h2 className=" absolute bottom-[10%] z-[0] right-[-50px] text-[#fff8] rotate-[90deg] uppercase felidae text-[100px] tracking-[4px]">RSVP</h2>
+      <h2 className="absolute bottom-[10%] z-[0] right-[-70px] text-[#fff8] rotate-[90deg] uppercase felidae text-[100px] tracking-[4px]">RSVP</h2>
     </div>
   );
 };
