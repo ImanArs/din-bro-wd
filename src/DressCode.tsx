@@ -8,7 +8,7 @@ export const DressCode = () => {
           className="w-full h-[500px] object-cover grayscale"
         />
         <div className="absolute z-10 inset-0 py-[26px] flex flex-col justify-between items-center bg-black/50 text-white">
-          <h2 className="text-[40px] uppercase tracking-widest playfair font-bold">Dress Code</h2>
+          <h2 className="text-[44px] uppercase tracking-widest felidae font-bold">Dress Code</h2>
           <p className="mt-4 text-[28px] text-center w-[350px] snellBold">Отличное настроение! А лучшее украшение вечера — ваша улыбка</p>
         </div>
       </div>

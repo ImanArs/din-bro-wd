@@ -24,7 +24,7 @@ export const Location = () => {
           {/* <p className=" snellBold text-[26px] tracking-[4px] leading-5 mt-[40px]">
             Место роведения нашей свадьбы просто прекрасно!
           </p> */}
-          <h2 className="playfair text-[50px] mt-[40px]">Ресторан "Ата"</h2>
+          <h2 className="playfair text-[54px] mt-[40px] felidae">Ресторан "Ата"</h2>
 
           <div className="flex flex-col gap-5 mb-[100px]">
             <p className=" snellBold text-[24px] tracking-[4px] leading-5 mt-[140px]">
